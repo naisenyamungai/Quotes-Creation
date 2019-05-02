@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Quote} from './quote';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Quotes';
+  quotes = [
+    new Quote(1,'Mother Theresa', 'If you Judge People, you have no time to Love Them', 'Naisenya'),
+    new Quote(2,'Oprah Winfrey', 'Surround yourself with only people who are going to lift you higher', 'Naisenya'),
+    new Quote(3,'Maya Angelou', 'When you learn, teach. When you get, give', 'Naisenya'),
+  ]
 }
