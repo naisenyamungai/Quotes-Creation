@@ -1,0 +1,16 @@
+body{
+    background-image: url(images/orangetulip.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:white;
+}
+.header{
+    text-align: center;
+    padding:50px;
+    color:white;
+}
+
+.contents{
+    margin-left:30px;
+    height:800px;
+}

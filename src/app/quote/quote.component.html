@@ -1,6 +1,12 @@
-<div class="header">
+<body>
+  <div class="header">
     <h1>QUOTES</h1>
   </div>
-  <ul>
-      <li *ngFor = 'let quote of quotes'>{{quote.quote}}</li>
-  </ul>
+  <div class="contents">
+    <div *ngFor = 'let quote of quotes'>
+      <app-quote-details [quote]='quote'></app-quote-details>
+      <li>{{quote.quote}}</li>
+    </div>
+  </div>
+  
+</body>
