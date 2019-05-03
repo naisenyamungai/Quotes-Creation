@@ -1,12 +1,13 @@
 body{
     background-image: url(images/orangetulip.jpg);
+    font-family: 'ZCOOL XiaoWei', serif;
     background-size: cover;
     background-repeat: no-repeat;
     color:white;
 }
 .header{
     text-align: center;
-    padding:30px;
+    padding:50px;
     color:white;
 }
 
@@ -14,4 +15,11 @@ body{
     margin-left:30px;
     height:800px;
     font-size:22px;
+    margin-top:30px;
+   
+}
+
+button{
+    margin-left:50px;
+    margin-top:50px;
 }

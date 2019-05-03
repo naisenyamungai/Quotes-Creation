@@ -14,12 +14,6 @@ export class QuoteComponent implements OnInit {
     new Quote(3,'Maya Angelou', 'When you learn, teach. When you get, give', 'Naisenya'),
   ]
 
-    toggleDetails(index){
-      this.quotes[index].showAuthor = !this.quotes[index].showAuthor;
-    }
-
-
-
   constructor() { }
 
   ngOnInit() {
