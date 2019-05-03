@@ -3,3 +3,8 @@
     margin-bottom:10px;
     font-size: 22px;  
 }
+
+#deleteButton{
+    background-color:orangered;
+    color:white;
+}
