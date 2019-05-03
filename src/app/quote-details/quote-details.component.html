@@ -2,6 +2,14 @@
   <p>
     {{quote.author}}
   </p>
+  <p>Uploaded{{quote.completeDate|dateCount}}days</p>
 </div>
-<button id="deleteButton" (click)='quoteComplete(true)'>Delete</button>
+<div class="buttons">
+  <div class="row">
+    <div class="col-md-6">
+      <button id="deleteButton" (click)='quoteComplete(true)'>Delete</button>
+    </div>
+  </div>
+</div>
+
 
