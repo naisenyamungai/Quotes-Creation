@@ -6,7 +6,7 @@
     <div *ngFor = 'let quote of quotes;let i = index'>
       <app-quote-details [quote]='quote'></app-quote-details>
       <li>{{quote.quote}}</li>
-      <button (click) = 'toggleDetails(i)'>Toggle Details</button> 
+      <button id="detailsButton" (click) = 'toggleDetails(i)'>Show Details</button> 
     </div>
   </div>
   
