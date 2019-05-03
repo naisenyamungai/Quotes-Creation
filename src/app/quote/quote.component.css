@@ -27,3 +27,9 @@ body{
     color:white;
 
 }
+
+#quoteform{
+    height:400px;
+    width:100%;
+    align-content: center;
+}
