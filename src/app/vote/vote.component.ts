@@ -11,7 +11,7 @@ export class VoteComponent implements OnInit {
     upvotes = 0;
     downvotes = 0;
 
-    upVotes(){
+    upVote(){
       this.upvotes = this.upvotes + 1;  
     }
 
