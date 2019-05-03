@@ -1,13 +1,13 @@
 <div class='writter'>
   <p>
     {{quote.author}}
-  </p>
-  <p>Uploaded{{quote.completeDate|dateCount}}days</p>
+  </p>  
 </div>
+<p>Uploaded {{quote.completeDate|dateCount}} days</p>
 <div class="buttons">
   <div class="row">
     <div class="col-md-6">
-      <button id="deleteButton" (click)='quoteComplete(true)'>Delete</button>
+      <button id="deleteButton" (click)='quoteDelete(true)'>Delete Quote</button>
     </div>
   </div>
 </div>
