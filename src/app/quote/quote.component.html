@@ -14,17 +14,23 @@
     </div> 
   </div>
   <div class="contents">
-    <div *ngFor = 'let quote of quotes;let i = index'>
-      <app-quote-details *ngIf="quote.showAuthor" [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>
-      <li>{{quote.quote}}</li>
-      <div class="buttons">
-          <div class="row">
-            <div class="col-md-6">
-              <button id="detailsButton" (click) = 'toggleDetails(i)'>Show Details</button>
-            </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="eachQuote">
+          <div *ngFor = 'let quote of quotes;let i = index'>
+              <app-quote-details *ngIf="quote.showAuthor" [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>
+              <div id="{{i}}">{{quote.quote}}</div>
+              <div class="buttons">
+                <div class="row">
+                  <div class="col-md-6">
+                    <button id="detailsButton" (click) = 'toggleDetails(i)'>Show Details</button>
+                  </div>
+                </div>
+              </div> 
           </div>
-      </div> 
-    </div>
+        </div>
+      </div>
+    </div> 
   </div>
   <footer></footer> 
 </body>
