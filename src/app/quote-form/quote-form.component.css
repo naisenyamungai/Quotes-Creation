@@ -1,7 +1,19 @@
 .container-fluid{
     font-family: 'ZCOOL XiaoWei', serif;
-    font-size:24px;
-    height:600px;
+    font-size:20px;
     width:100%;
     align-content: center;
+    margin-top:20px;
 }
+
+#author, #quote, #submitter, #complete{
+    font-size:20px;
+    font-family: 'ZCOOL XiaoWei', serif;
+    color:orangered;
+}
+
+#submitButton{
+    font-size:20px;
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+

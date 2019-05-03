@@ -1,11 +1,16 @@
 <body>
   <div class="header">
     <h1>QUOTES</h1>
+    <h3><em>Words are the most powerful drug used by human beings .....</em></h3>
   </div>
 
   <div class="container">
     <div class="row">
-      <app-quote-form></app-quote-form>
+      <div class="col-md-12">
+        <div id="form-details">
+            <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+        </div>
+      </div> 
     </div> 
   </div>
   <div class="contents">
@@ -21,5 +26,5 @@
       </div> 
     </div>
   </div>
-  
+  <footer></footer> 
 </body>
