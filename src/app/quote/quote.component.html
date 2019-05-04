@@ -39,8 +39,8 @@
           <h2 *ngIf="showDetails">{{quote.author}}</h2>
         </div>
         <div class="card-body">
-          <h1>{{quote.quote}}</h1>
-          <button id="detailsButton" (click) = 'toggleQuote()'>{{showDetails? "Hide": "Show"}} Quote Details</button>
+          <h1 id="{{i}}" appHighlight>{{quote.quote}}</h1>
+          <button id="detailsButton" (click) = 'toggleDetails(i)'>{{showDetails? "Hide": "Show"}} Quote Details</button>
         </div> 
         <div class="card-footer" *ngIf="showDetails">
           <div class="row">
@@ -64,13 +64,37 @@
           </div>
           <div class="row">
             <div class="deleteQuote">
-              <app-quote-details [quote]='quote' (isComplete)= 'deleteQuote'></app-quote-details>
+              <app-quote-details [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>
             </div>
           </div>       
         </div>
       </div>
   </div>
   <footer>
-    
+      <div class="footer">
+          <h3>Get in touch </h3>
+          <br>
+          <p>Follow us on any of our social media handles below:</p>
+          <div class="row justify-content-center">
+              <div id="icons">
+                  <div class="col-md-2">
+                      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>    
+                  </div>
+                  <div class="col-md-2">
+                      <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>    
+                  </div>
+                  <div class="col-md-2">
+                      <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="row justify-content-center">
+              <div id="year">
+                  <div class="col-md-12">
+                      <p>2019 QUOTES</p>
+                  </div>
+              </div>
+          </div>
+      </div> 
   </footer> 
 </body>
