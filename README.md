@@ -1,27 +1,61 @@
-# QuotesCreation
+## Project Name
+           QUOTES CREATION
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+## Author
+            [Naisenya Mungai](https://github.com/naisenyamungai)
+            Student - Full Stack Developer(Java & Android) 
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Project Description
+> A program that allows a user to create a quote and publish it, vote on it and delete the quote if need be.
 
-## Code scaffolding
+## Project Overview
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+| Behavior        | Input           | Outcome  |
+| ------------- |:-------------:| -----:|
+| User types a quote, fills the author, date and  submitter| clicks / ADD QUOTE | Quote appears on the window |
+| Use clicks on see details | Click SHOW DETAILS | All the information regarding the quote appears
+| User likes a quote and want to like the quote | Click Upvote  | Upvote is added |
+| User does not like the quoteand wants to downvote | Click DownVote  | Downote is added |
+| User does not like a quote and wants to delete it  | Click Delete Quote| Quote is deleted |
+| When a quote gets more votes that all the others | use double clicks on the quote | It is highlighted a different color |
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Technologies Used
+>The application was created using below technologies;
+>- AngularJS
+>- HTML
+>- CSS
+>- BootStrap
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Known Bugs
+> No known Bugs at the moment
 
-## Running end-to-end tests
+## SetUp Instructions
+> Internet Connection is required for the following instructions to be executed
+>- Open Chrome, Mozilla or any browser in your disposal.
+>- Internet Connection is a must.
+>- Search naisenyamungai on github.
+>- Click on the active link on Quotes-Creation.
+>- No other downloads or plug-ins are required.
+>- Type in the author, submitter, quote and date and see your quote appear.
+>- For any feedback on bugs and errors contact naisenyamungai@gmail.com or 0721635386.
+>- Alternatively you can clone the project onto your local machine to have a sneak peak at the code used.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+> Requirements:
+>- Author Name, Quote, Submitter Details, Date of Submission.
+>- Create a Quote.
+>- Upvote or downvote a quote.
+>- Delete a Quote
+>- See the number of upvotes and number of downvotes for each quote.
 
-## Further help
+## Support and contact details
+> naisenyamungai@gmail.com
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## To access this webpage open below link
+> https://naisenyamungai.github.io/PIG-DICE-GAME/
+
+## [License](https://naisenyamungai.github.io/Quotes-Creation/LICENSE.md)
+
+MIT © [Naisenya Mungai ](https://github.com/naisenyamungai)
