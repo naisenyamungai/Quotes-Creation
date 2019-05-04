@@ -3,6 +3,7 @@ body{
     font-family: 'ZCOOL XiaoWei', serif;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     color:white;
 }
 .header{
@@ -70,11 +71,16 @@ footer{
 
 .card-body h1{
     margin-left:15%;
+    margin-top:20px;
+    
 }
 
 .card-body #detailsButton{
-    margin-left:40%;
-    font-size:20px;
+    margin-left:45%;
+    font-size:16px;
+    margin-top:5px;
+    border:green;
+    height:34px;
 }
 
 .card-header h2{
@@ -86,6 +92,15 @@ footer{
 }
 
 .voteDetails{
-    margin-left:40%;
+    margin-left:55%;
     
+}
+
+.deleteQuote{
+    margin-left:44%;
+}
+
+.deleteQuote1{
+    margin-left:70%;
+    margin-top:10px;
 }

@@ -15,7 +15,7 @@ export class QuoteComponent implements OnInit {
     new Quote(4,'Wavinya Ndeti', 'Yaliyo Ndwele Sipite', 'Naisenya', new Date(2019, 4, 3) ), 
   ]
 
-  showQuote = false;
+  showDetails = false;
 
   addNewQuote(quote){
     let quoteLength = this.quotes.length;
@@ -33,8 +33,8 @@ export class QuoteComponent implements OnInit {
     }
   }
 
-  toggleDetails(index){
-    this.quotes[index].showAuthor = !this.quotes[index].showAuthor;
+  toggleQuote(){
+    this.showDetails = !this.showDetails;
   }
 
   constructor() { }

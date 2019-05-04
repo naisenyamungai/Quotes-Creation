@@ -36,23 +36,37 @@
   <div class="container" id="myCard">
       <div class="card" *ngFor = 'let quote of quotes;let i = index'>
         <div class="card-header">
-          <h2>{{quote.author}}</h2>
+          <h2 *ngIf="showDetails">{{quote.author}}</h2>
         </div>
         <div class="card-body">
           <h1>{{quote.quote}}</h1>
-          <button id="detailsButton" (click) = 'toggleDetails(i)'>Show Details</button>
+          <button id="detailsButton" (click) = 'toggleQuote()'>{{showDetails? "Hide": "Show"}} Quote Details</button>
         </div> 
-        <div class="card-footer">
+        <div class="card-footer" *ngIf="showDetails">
           <div class="row">
             <div class="submitterDetails">
               <h3>Submitted by {{quote.submitter}}, {{quote.completeDate|dateCount}} days ago</h3>
             </div>
           </div>
           <div class="row">
-            <div class="voteDetails">
-              <app-vote></app-vote>
+            <div class="col-md-9">
+              <div class="voteDetails">
+                <app-vote></app-vote>
+              </div>
             </div>
-          </div>          
+           <!-- <div class='col-md-2'>
+              <div class="deleteQuote1">
+                <app-quote-details [quote]='quote' (isComplete)= 'deleteQuote'></app-quote-details>
+              </div>
+            </div>-->
+            
+            
+          </div>
+          <div class="row">
+            <div class="deleteQuote">
+              <app-quote-details [quote]='quote' (isComplete)= 'deleteQuote'></app-quote-details>
+            </div>
+          </div>       
         </div>
       </div>
   </div>
