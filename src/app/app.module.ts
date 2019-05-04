@@ -11,6 +11,7 @@ import { HighestupvoteDirective } from './highestupvote.directive';
 import { DateCountPipe } from './date-count.pipe';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { VoteComponent } from './vote/vote.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { VoteComponent } from './vote/vote.component';
     HighestupvoteDirective,
     DateCountPipe,
     QuoteFormComponent,
-    VoteComponent
+    VoteComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
