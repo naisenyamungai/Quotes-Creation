@@ -13,7 +13,7 @@
       </div> 
     </div> 
   </div>
-  <div class="contents">
+<!-- <div class="contents">
     <div class="row">
       <div class="col-md-12">
         <div class="eachQuote">
@@ -31,6 +31,30 @@
         </div>
       </div>
     </div> 
+  </div>--> 
+  <hr>
+  <div class="container" id="myCard">
+      <div class="card" *ngFor = 'let quote of quotes;let i = index'>
+        <div class="card-header">
+          <h2>{{quote.author}}</h2>
+        </div>
+        <div class="card-body">
+          <h1>{{quote.quote}}</h1>
+          <button id="detailsButton" (click) = 'toggleDetails(i)'>Show Details</button>
+        </div> 
+        <div class="card-footer">
+          <div class="row">
+            <div class="submitterDetails">
+              <h3>Submitted by {{quote.submitter}}, {{quote.completeDate|dateCount}} days ago</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="voteDetails">
+              <app-vote></app-vote>
+            </div>
+          </div>          
+        </div>
+      </div>
   </div>
   <footer></footer> 
 </body>
