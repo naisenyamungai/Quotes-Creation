@@ -54,7 +54,7 @@
 > naisenyamungai@gmail.com
 
 ## To access this webpage open below link
-> https://naisenyamungai.github.io/PIG-DICE-GAME/
+> https://naisenyamungai.github.io/Quotes-Creation/
 
 ## [License](https://naisenyamungai.github.io/Quotes-Creation/LICENSE.md)
 
